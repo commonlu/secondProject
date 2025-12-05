@@ -22,7 +22,7 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 
 // 3. 全局配置 Axios
 //    设置基础URL，这样后面所有请求都会自动在前面加上这个地址
-axios.defaults.baseURL = 'http://47.107.75.215:8080' // 你的Spring Boot后端地址
+axios.defaults.baseURL = 'https://hr-sys-y9le.onrender.com' // 你的Spring Boot后端地址
 //    可选：将axios挂载到全局，方便在任何组件中使用 this.$axios
 app.config.globalProperties.$axios = axios
 
