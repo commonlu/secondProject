@@ -7,7 +7,10 @@
           <el-icon>
             <UserFilled />
           </el-icon>
-          <span>人事管理系统</span>
+          <div class="nav-logo-content">
+            <span class="nav-logo-title">人事管理系统</span>
+            <span class="nav-logo-time">{{ currentTime }}</span>
+          </div>
         </div>
         <ul class="nav-menu">
           <li class="nav-item">
@@ -77,7 +80,6 @@
           </el-avatar>
         </div>
       </div>
-      <div class="nav-time-fixed">{{ currentTime }}</div>
     </nav>
     <!-- 更改头像对话框 -->
     <el-dialog
@@ -732,6 +734,23 @@ html, body {
 .nav-logo i {
   margin-right: 10px;
   font-size: 1.8rem;
+}
+
+.nav-logo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.nav-logo-time {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  animation: timeGlow 2.5s ease-in-out infinite;
 }
 
 .nav-menu {
